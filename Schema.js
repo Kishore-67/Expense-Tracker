@@ -9,5 +9,7 @@ const credentialschema= new mongoose.Schema({
     }
 })
 
+
+
 const details=mongoose.model('LOGINDETAILS',credentialschema)
 module.exports={details}
