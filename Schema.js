@@ -1,17 +1,13 @@
 const mongoose=require('mongoose')
 
-const expensetrackerschema=new mongoose.Schema({
-    amount:{
-        type:Number
-    },
-    category:{
+const credentialschema= new mongoose.Schema({
+    username:{
         type:String
     },
-    date:{
+    password:{
         type:String
     }
 })
 
-const Expense=mongoose.model('EXPENSE_DETAILS',expensetrackerschema)
-
-module.exports={Expense}
+const details=mongoose.model('LOGINDETAILS',credentialschema)
+module.exports={details}
