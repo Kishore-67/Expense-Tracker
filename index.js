@@ -1,4 +1,4 @@
-const {details}=require('./schema')
+const {details}=require('./Schema')
 const mongoose=require('mongoose')
 const express=require('express')
 const bodyparser=require('body-parser')
@@ -22,7 +22,7 @@ async function connectdb(){
 }
 
 connectdb()
-app.post('/adds',async(request,response)=>{
+app.post('/adds',async(request,response)=>{ 
     // console.log(request.body)
     // response.json({
     //     "status":"created"
